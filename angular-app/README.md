@@ -34,7 +34,7 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 ## Formatting rules
 first row in csv is title,
 other rows is data.
-cells should be delimited with ',' and each data row should be delimited with new line
+cells should be delimited with `,` and each data row should be delimited with new line
 date format is YYYY-MM-DD
 
 Example:
