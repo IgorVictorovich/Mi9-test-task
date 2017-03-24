@@ -1,0 +1,30 @@
+<div class="form-group" >
+  <label for="textarea-input-csv">CSV:</label>
+  <textarea id="textarea-input-csv" class="form-control"
+    [(ngModel)] = "csvText" cols="100" rows="20">
+  </textarea>
+</div>
+<button
+  id="generate-button"
+  type="button"
+  class="btn btn-success"
+  (click)="onClick()"
+  [disabled]="!csvText"
+  >
+  Generate Table
+</button>
+
+<table class="table table-striped table-hover display" style="cellspacing:0;width:100%">
+     <thead>
+          <tr>
+             <th *ngFor="let title of titleList" (click)="onTableClick(title)">
+                 {{title}}
+              </th>
+          </tr>
+     </thead>
+     <tbody >
+           <tr *ngFor="let row of tableData | values">
+                <td *ngFor="let key of row | values">{{key}}</td>
+           </tr>
+    </tbody>
+</table>
