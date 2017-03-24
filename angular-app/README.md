@@ -32,7 +32,7 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Formatting rules
-first row in csv is title,
+First row in csv is title,
 other rows is data.
 cells should be delimited with `,` and each data row should be delimited with `new line`.
 Date format is `YYYY-MM-DD`
